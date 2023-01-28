@@ -1,0 +1,14 @@
+<%- include("partials/header") -%>
+
+    <% if (title !== "Not Found") { %>
+        <h1><%= title %></h1>
+        <p><%= content %></p>
+
+        <form action="/delete" method="post">
+            <button class="btn btn-warning float-right" type="submit" name="deleteButton" value="<%=id%>">Delete Post</button>
+        </form>
+    <% } else { %>
+        <h1 style="text-align:center; margin-top: 80px; color: red;"> Post Not Found</h1>
+    <% } %>
+
+<%- include("partials/footer") -%>

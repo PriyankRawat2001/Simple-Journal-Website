@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="A simple blogging application created as an exercise with JavaScript, Node, Express">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript,Node,Express">
+    <meta name="author" content="Dimitris Tsaknakis">
+    <!-- link to favicon -->
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <title>Simple Blog Website</title>
+    <!-- Adding Bootstrap 4.3.1 and custom CSS styles -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-expand-lg">
+        <div class="container-fluid">
+            <div class="navbar-brand">
+                <a href="/">
+                    <img src="/images/blue.png" width=30 height=30 class="d-inline-block align-top" alt="dt logo">
+                </a>
+                DAILY JOURNAL
+            </div>
+            <button class="navbar-toggler navbar-dark" type="button"  data-toggle="collapse" data-target="#blogLinks" aria-controls="blogLinks" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="blogLinks">
+            <ul class="nav navbar-nav navbar-right ml-auto">
+                <li id="home" class="nav-item"><a href="/" class="nav-link">HOME</a></li>
+                <li id="about" class="nav-item"><a href="/about" class="nav-link">ABOUT US</a></li>
+                <li id="contact" class="nav-item"><a href="/contact" class="nav-link">CONTACT</a></li>
+                <div class="dropdown-divider"></div>
+                <li id="contact" class="nav-item"><a href="/compose" class="nav-link  create-post">CREATE POST</a></li>
+            </ul>
+            </div>
+        </div>
+    </nav><%# end navbar %>
+
+    <div class="container">

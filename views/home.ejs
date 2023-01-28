@@ -1,0 +1,20 @@
+<%- include("partials/header") %>
+
+        <h1>Instructions</h1>
+        <p><%= startingContent %></p>
+
+        <% if (blogPosts.length > 0) { %>
+            <hr>
+            <% blogPosts.forEach((post) => { %>
+                <h1><%= post.title %></h1>
+                <p>
+                    <%= post.content.substring(0, 100) + " " %>
+                    <% if (post.content.length > 100) { %>
+                        <span> ...</span>
+                    <% } %>
+                    <a href="/posts/<%= post._id %>" style="margin-left: 8px;"> Read More</a>
+                </p>
+            <% }); %>
+        <% }; %>
+
+<%- include("partials/footer") %>
