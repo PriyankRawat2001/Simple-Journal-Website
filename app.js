@@ -7,9 +7,9 @@ const _ = require("lodash");
 
 
 
-mongoose.connect("mongodb://localhost:27017/blogDB", {useNewUrlParser: true});
+mongoose.connect("mongodb+srv://admin-priyank:test1234@cluster0.jtwxtjo.mongodb.net/blogDB")
 
-
+//mongoose.connect("mongodb://localhost:27017/blogDB", {useNewUrlParser: true});
 const postSchema = mongoose.Schema({
     title: {
         type: String,
